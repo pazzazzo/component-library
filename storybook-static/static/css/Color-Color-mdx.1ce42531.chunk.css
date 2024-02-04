@@ -1,0 +1,26 @@
+:root {
+  --background-1: #020423;
+  --background-2: #111455;
+  --background-3: #06093A;
+  --background-4: #000003;
+
+  --color-primary: #0B7BE0;
+  --color-secondary: #35628B;
+  --color-red: #E12419;
+  --color-orange: #E06E0B;
+  --color-green: #4caf50;
+  --color-disabled: #808080;
+  --color-disabled-text: #c9c9c9;
+
+  --border: #85858544;
+  --border-2: #3d3d3d;
+  --border-3: #101113;
+
+  --blackened-screen-color: #00000060;
+  --box-shadow: -8px 7px 19px 0px #000;
+  --border-radius: 0.1875rem;
+  --border-radius-2: 0.5rem;
+  --border-radius-rounded: 3em;
+}
+
+/*# sourceMappingURL=Color-Color-mdx.1ce42531.chunk.css.map*/

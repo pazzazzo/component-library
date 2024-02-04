@@ -1,0 +1,134 @@
+div.ripple {
+    position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+  span.ripple {
+    transform: scale(0);
+    border-radius: 100%;
+    position: absolute;
+    opacity: 0.75;
+    background-color: rgba(174, 174, 174, 0.844);
+    animation-name: ripple;
+    animation-duration: 1000ms;
+  }
+
+  @keyframes ripple {
+    to {
+      opacity: 0;
+      transform: scale(2);
+    }
+  }
+:root {
+  --background-1: #020423;
+  --background-2: #111455;
+  --background-3: #06093A;
+  --background-4: #000003;
+
+  --color-primary: #0B7BE0;
+  --color-secondary: #35628B;
+  --color-red: #E12419;
+  --color-orange: #E06E0B;
+  --color-green: #4caf50;
+  --color-disabled: #808080;
+  --color-disabled-text: #c9c9c9;
+
+  --border: #85858544;
+  --border-2: #3d3d3d;
+  --border-3: #101113;
+
+  --blackened-screen-color: #00000060;
+  --box-shadow: -8px 7px 19px 0px #000;
+  --border-radius: 0.1875rem;
+  --border-radius-2: 0.5rem;
+  --border-radius-rounded: 3em;
+}
+.button {
+  font-weight: 700;
+  display: inline-block;
+  text-align: center;
+  border: 0;
+  cursor: pointer;
+  border-radius: var(--border-radius);
+  position: relative;
+  line-height: 1;
+  transition: all .2s linear;
+  color: white;
+  background-color: var(--color-primary);
+  overflow: hidden;
+  color: transparent;
+  position:relative;
+}
+
+.button::before {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  letter-spacing: normal;
+  letter-spacing: initial;
+  color: #fff;
+  transition: all 0.2s ease;
+}
+
+.button.button-rounded {
+  border-radius: var(--border-radius-rounded);
+}
+
+.button-small {
+  font-size: 0.75rem;
+  padding: 0.625rem 1rem;
+}
+
+.button-medium {
+  font-size: 0.875rem;
+  padding: 0.688rem 1.25rem;
+}
+
+.button-large {
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+}
+
+.button.color-primary {
+  background-color: var(--color-primary);
+}
+
+.button.color-secondary {
+  background-color: var(--color-secondary);
+}
+
+.button.color-red {
+  background-color: var(--color-red);
+}
+
+.button.color-orange {
+  background-color: var(--color-orange);
+}
+
+.button.color-green {
+  background-color: var(--color-green);
+}
+
+.button.button-disabled {
+  background-color: var(--color-disabled);
+  color: var(--color-disabled-text);
+  cursor: not-allowed;
+}
+.button.button-disabled::before {
+  color: var(--color-disabled-text);
+}
+
+.button.button-enabled:hover::before {
+  letter-spacing: .5px;
+}
+
+.ripple {
+  pointer-events: auto;
+}
+
+/*# sourceMappingURL=Button-Button-stories.2921d7c9.chunk.css.map*/
